@@ -1,0 +1,10 @@
+﻿#myLayer
+{
+    /* 기본값 */
+    position:absolute; left:0px; top: 0px;
+    /* 변환 : 이동, 회전, 크기, 기울기 */
+    transform: translate(100px, 200px) rotate(45deg) scale(1.5, 1.5) skewX(15deg);
+    -ms-transform: translate(100px, 200px) rotate(45deg) scale(1.5, 1.5) skewX(15deg);
+    -webkit-transform: translate(100px, 200px) rotate(45deg) scale(1.5, 1.5) skewX(15deg);
+    -moz-transform: translate(100px, 200px) rotate(45deg) scale(1.5, 1.5) skewX(15deg);
+}

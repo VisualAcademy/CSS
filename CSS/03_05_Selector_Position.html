@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>선택기(Selector)</title>
+    <style>
+        /*ul li {
+            background-color:yellow;
+        }*/
+        /*ul li:first-child, ul li:last-child {
+            background-color:yellow;
+        }*/
+        /* CSS는 제로베이스가 아님, 1부터 인덱스 시작 */
+        /*ul li:nth-child(3) {
+            background-color:yellow;
+        }*/
+        /*ul li:nth-child(2n) {
+            background-color:yellow;
+        }
+        ul li:nth-child(2n - 1) {
+            background-color:silver;
+        }*/
+        ul li:nth-child(3n) {
+            background-color:yellow;
+        }
+        ul li:nth-child(3n - 1) {
+            background-color:orange;
+        }
+        ul li:nth-child(3n - 2) {
+            background-color:silver;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>데브렉</li>
+        <li>닷넷코리아</li>
+        <li>레드플러스</li>
+        <li>라이선스랜드</li>
+        <li>자바캠퍼스</li>
+    </ul>
+
+</body>
+</html>

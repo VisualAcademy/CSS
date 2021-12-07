@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>공지사항 제목, 세미나 일정 리스트</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .notice {
+            list-style: none;
+        }
+
+            .notice > li {
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+                .notice > li .date {
+                    background-color: tomato;
+                    width: 60px;
+                    color: #C0FFEE; 
+                    text-align: center;
+                    padding: 0;
+                    border-radius: 7px; 
+                }
+
+                    .notice > li .date .month {
+                        text-transform: uppercase; 
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding: 2px 6px;
+                    }
+
+                    .notice > li .date .day {
+                        background: #f7f7f7;
+                        color: #333;
+                        font-size: 20px; 
+                        padding: 6px 12px 6px 12px;
+                    }
+
+                .notice > li .details {
+                    position: absolute;
+                    top: 0;
+                    left: 70px;
+                }
+
+                    .notice > li .details .title {
+                        display: block;
+                        font-weight: bold;
+                        font-size: 20px; 
+                        margin-bottom: 5px;
+                    }
+
+                    .notice > li .details .name {
+                        font-size: 15px; 
+                    }
+    </style>
+</head>
+<body>
+    <h1>공지사항 제목, 세미나 일정 리스트</h1>
+    <!--(div.date>div.month+div.day)+(div.details>span.title+span.name)-->
+    <ul class="notice">
+        <li>
+            <div class="date">
+                <div class="month">Jan</div>
+                <div class="day">25</div>
+            </div>
+            <div class="details">
+                <span class="title">Angular 2</span>
+                <span class="name">박용준</span>
+            </div>
+        </li>
+        <li>
+            <div class="date">
+                <div class="month">Jan</div>
+                <div class="day">26</div>
+            </div>
+            <div class="details">
+                <span class="title">ASP.NET Core</span>
+                <span class="name">한상훈</span>
+            </div>
+        </li>
+        <li>
+            <div class="date">
+                <div class="month">Feb</div>
+                <div class="day">11</div>
+            </div>
+            <div class="details">
+                <span class="title">Azure</span>
+                <span class="name">김태영</span>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

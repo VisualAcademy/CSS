@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>:last-child</title>
+    <style>
+        .theDiv {
+            border: 1px solid red;
+        }
+        ul.theList {
+            list-style:none;            
+            padding-left: 0;
+        }
+        ul.theList > li {
+            border-bottom: 1px solid red;
+            padding: 10px 0; 
+        }
+        ul.theList > li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="theDiv">
+        <ul class="theList">
+            <li>01</li>
+            <li>02</li>
+            <li>03</li>
+            <li>04</li>
+            <li>05</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CSS3 애니메이션</title>
+    <style>
+        div {
+            width:100px; height:100px; background-color: aqua; margin: 20px;
+        }
+        /* 애니메이션 정의 1 */
+        @keyframes changeColor1 {
+            from {
+                background: red;
+            }
+
+            to {
+                background: yellow;
+            }
+        }
+
+        @-moz-keyframes changeColor1 {
+            from {
+                background: red;
+            }
+
+            to {
+                background: yellow;
+            }
+        }
+
+        @-webkit-keyframes changeColor1 {
+            from {
+                background: red;
+            }
+
+            to {
+                background: yellow;
+            }
+        }
+
+        /* 애니메이션 적용 1 */
+        #theBox1 {
+            -moz-animation: changeColor1 5s infinite alternate;
+            -o-animation: changeColor1 5s infinite alternate;
+            -webkit-animation: changeColor1 5s infinite alternate;
+            animation: changeColor1 5s infinite alternate;
+        }
+
+        /* Animation 정의 2 */
+        @keyframes changeColor2 {
+            0% {background-color: red; }
+            25% {background-color: blue; }
+            50% {background-color: green; }
+            75% {background-color: silver; }
+            100% {background-color: yellow; }
+        }
+
+        @-moz-keyframes changeColor2 {
+        }
+
+        @-webkit-keyframes changeColor2 {
+        }
+
+        /* Animation 적용 2 */
+        #theBox2 {
+            -moz-animation: changeColor2 10s;
+            -o-animation: changeColor2 10s;
+            -webkit-animation: changeColor2 10s;
+            animation: changeColor2 10s;
+        }
+
+        /* Animation 정의 3 */
+        @keyframes moveBox {
+            0% { background-color: red; }
+            25% {
+                background-color: blue;
+                box-shadow: 0 0 2px 2px orange;
+                -moz-transform: scale(1.2) rotate(5deg) translate(1em);
+                -ms-transform: scale(1.2) rotate(5deg) translate(1em);
+                -o-transform: scale(1.2) rotate(5deg) translate(1em);
+                -webkit-transform: scale(1.2) rotate(5deg) translate(1em);
+                transform: scale(1.2) rotate(5deg) translate(1em);
+            }
+            50% {
+                background-color: green;               
+                box-shadow: 0 0 4px 4px red;
+                -moz-transform: scale(1.5) rotate(15deg) translate(.5em, -5em);
+                -ms-transform: scale(1.5) rotate(15deg) translate(.5em, -5em);
+                -o-transform: scale(1.5) rotate(15deg) translate(.5em, -5em);
+                -webkit-transform: scale(1.5) rotate(15deg) translate(.5em, -5em);
+                transform: scale(1.5) rotate(15deg) translate(.5em, -5em);
+            }
+            100% {
+                background-color: yellow;                 
+                box-shadow: 0 0 14px 8px yellow;
+                -moz-transform: scale(0.5) rotate(0deg) translate(0em, -30em);
+                -ms-transform: scale(0.5) rotate(0deg) translate(0em, -30em);
+                -o-transform: scale(0.5) rotate(0deg) translate(0em, -30em);
+                -webkit-transform: scale(0.5) rotate(0deg) translate(0em, -30em);
+                transform: scale(0.5) rotate(0deg) translate(0em, -30em);
+            }            
+        }
+
+        @-moz-keyframes name {
+        }
+
+        @-webkit-keyframes name {
+        }
+        /* Animation 적용 3 */
+        #theBox3 {
+            -moz-animation: moveBox 12s infinite alternate;
+            -o-animation: moveBox 12s infinite alternate;
+            -webkit-animation: moveBox 12s infinite alternate;
+            animation: moveBox 12s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="theBox1"></div>
+    <div id="theBox2"></div>
+    <div id="theBox3"></div>
+
+</body>
+</html>

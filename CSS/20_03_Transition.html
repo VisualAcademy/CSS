@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CSS3 Transition</title>
+    <style>
+        .theBox {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            margin: 20px;
+            /* 트랜지션 효과 */
+            -moz-transition: all 2s;
+            -o-transition: all 2s;
+            -webkit-transition: all 2s;
+            transition: all 2s;
+            /*transition: background-color, width, border-radius, 2s;*/
+        }
+        .theBox:hover {
+            background-color:yellow; 
+            width:200px;
+            border-radius:50%;
+        }
+        #title {
+            -moz-transition: all 3s;
+            -o-transition: all 3s;
+            -webkit-transition: all 3s;
+            transition: all 3s; 
+            text-align:center;
+        }
+            #title:hover {
+                color: red;
+                -moz-transform: scale(2);
+                -ms-transform: scale(2);
+                -o-transform: scale(2);
+                -webkit-transform: scale(2);
+                transform: scale(2);
+            }
+    </style>
+</head>
+<body>
+    <h1 id="title">CSS3 동영상 강의</h1>
+
+    <div id="div01" class="theBox"></div>
+    <div id="div02" class="theBox"></div>
+    <div id="div03" class="theBox"></div>
+    <div id="div04" class="theBox"></div>
+
+</body>
+</html>

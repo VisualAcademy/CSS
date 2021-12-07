@@ -1,0 +1,17 @@
+﻿
+// JavaScript에서 스타일 변경하기
+
+var theTitle = document.getElementById('title');
+theTitle.style.color = 'red';
+//theTitle.style.background-color = 'yellow';
+theTitle.style.backgroundColor = 'yellow';
+
+
+// jQuery를 사용하여 CSS 접근
+
+$('#title').css('color', 'red'); // 스타일 적용
+
+$('#title').addClass('changeColor');	// 해당 객체에 class='changeColor' 속성/값 부여
+$('#title').removeClass('changeColor');
+$('#title').toggleClass('changeColor'); // 적용 <-> 해제
+

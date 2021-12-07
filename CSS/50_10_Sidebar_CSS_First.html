@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .me .sidebar {
+            margin: 0;
+            padding: 0;
+            background-color: #3D3D3D;
+            width: 100%;
+            height: 100%;
+        }
+
+            .me .sidebar > ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+                .me .sidebar > ul li {
+                    display: block;
+                    border: 0;
+                    border-bottom: 1px #5c5c5c solid;
+                    position: relative;
+                }
+
+                    .me .sidebar > ul li.title {
+                        padding: 20px 20px 10px 20px;
+                        font-family: 'Malgun Gothic', 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+                        font-weight: 300;
+                        font-size: 2rem;
+                        letter-spacing: 0.01em;
+                        line-height: 2.2rem;
+                        color: #ffffff;
+                    }
+
+                    .me .sidebar > ul li a {
+                        display: block;
+                        position: relative;
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        color: #eeeeee;
+                        background-color: #3D3D3D;
+                    }
+
+                        .me .sidebar > ul li a:hover {
+                            background-color: #262626;
+                            color: #ffffff;
+                        }
+
+                    .me .sidebar > ul li.stick {
+                        position: relative; 
+                    }
+                    .me .sidebar > ul li.stick:before {
+                            content: "";
+                            position: absolute;
+                            width: 7px;
+                            height: 40px;
+                            left: -7px;
+                            text-indent: -9999px;
+                            border-top-left-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                            background-color: inherit;
+                    }
+                    .me .sidebar > ul li.disabled a {
+                        background-color: #8a8a8a; cursor: default; color: #555555;
+                    }
+                    .me .sidebar > ul li.active a {
+                        background-color: #9a1616; color: #ffffff; 
+                    }
+
+    </style>
+</head>
+<body>
+
+    <div style="padding-left:50px; border:1px solid red;">
+        <div class="me">
+            <h3>Dark Style</h3>
+            <div class="sidebar" style="width:180px;">
+                <ul>
+                    <li class="title">Items Group 1</li>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li class="stick" style="background-color:red;"><a href="#">Layouts</a></li>
+                    <li class="stick" style="background-color:yellow;">
+                        <a href="#">Sub menu</a>
+                        <ul>
+                            <li><a href="#">Subitem 1</a></li>
+                            <li><a href="#">Subitem 2</a></li>
+                            <li><a href="#">Subitem 3</a></li>
+                            <li>-</li>
+                            <li><a href="#">Subitem 4</a></li>
+                            <li><a href="#">Subitem 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="stick" style="background-color:green;"><a href="#">Thread item</a></li>
+                    <li class="disabled"><a href="#">Disabled item</a></li>
+
+                    <li class="title">Items Group 2</li>
+                    <li><a href="#">Other Item 1</a></li>
+                    <li><a href="#">Other Item 2</a></li>
+                    <li><a href="#">Other Item 3</a></li>
+                    <li>
+                        <a href="#">Sub memu 2</a>
+                        <ul>
+                            <li><a href="#">Subitem 1</a></li>
+                            <li><a href="#">Subitem 2</a></li>
+                            <li><a href="#">Subitem 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

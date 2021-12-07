@@ -1,0 +1,5 @@
+﻿#myLayer
+{
+    border:1px solid red; width:300px; height:200px;    
+    resize:both; overflow:hidden;
+}

@@ -1,0 +1,11 @@
+﻿#myBox
+{
+    border:1px solid gray; width:300px; height:200px;
+    box-shadow:5px 5px 10px red;
+}
+#myText
+{
+    border:1px solid gray;   
+    font-size:30px;
+    text-shadow:1px 1px 2px #FFFF00;  
+}

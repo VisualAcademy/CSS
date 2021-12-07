@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>max-width 속성(최대 가로)과 min-width 속성(최소 폭)</title>
+	<meta charset="utf-8" />
+    <style>
+        /* 공통 레벨 */
+        input, select, textarea {
+            width: 100%;
+        }
+        /* 페이지 레벨 */
+        input, select, textarea {
+            /*width: 380px;*/ /* 사이즈 고정*/
+            max-width: 380px; /* 380px ~ 0px */
+            min-width: 330px; /* 330px ~ 380px */
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="" />
+    <br />
+    <select>
+        <option>Test</option>
+    </select>
+    <hr />
+    <textarea></textarea>
+</body>
+</html>

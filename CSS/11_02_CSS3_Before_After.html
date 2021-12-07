@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo 요소</title>
+    <style>
+        .btn_bracketed {
+            background-color:#C0FFEE;
+        }
+        .btn_bracketed::before {
+            display: inline; 
+            content: "[";
+            padding-right: 0.5em;
+        }
+        .btn_bracketed::after {
+            display: inline; 
+            content: "]";
+            padding-left: 0.5em; 
+        }
+    </style>
+</head>
+<body>
+    <button class="btn_bracketed">클릭하세요.</button>
+    <hr />
+    <a href="#" class="btn_bracketed">이동하세요.</a>
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Floating(플로팅): 떠 있는, 유동적인, float: 뜨다, 띄우다, 떠가다</title>
+	<meta charset="utf-8" />
+    <style>
+        dt {
+            background-color:skyblue;
+            float:left;
+            width:125px;
+            height: 50px;
+        }        
+        dd {
+            background-color:yellow;
+        }
+
+        div {
+            width:100px; height:100px; 
+            background-color: azure;
+            float:left;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>암호 변경</h2>
+    <dl>
+        <dt>현재 비밀번호: </dt>
+        <dd><input type="text" name="name" value=" " /></dd>
+
+        <dt>새 비밀번호: </dt>
+        <dd><input type="text" name="name" value=" " /></dd>
+
+        <dt>비밀번호 확인: </dt>
+        <dd><input type="text" name="name" value=" " /></dd>
+
+        <dt style="clear:left;"></dt>
+        <dd>
+            <input type="button" name="name" value="암호 변경" />
+        </dd>
+    </dl>
+    <hr style="clear:both;" />
+
+    <div>
+        박스1(왼쪽)
+    </div>
+    <div style="float:right;">
+        박스2(오른쪽)
+    </div>
+    <div>
+        박스3(왼쪽)
+    </div>
+    <div style="clear:both;">
+        박스4(새행)
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>사용자 정의 폰트</title>
+    <style>
+        @font-face {
+            font-family: MyFont;
+            src: url('./fonts/PermanentMarker-webfont.woff') format('woff');
+        }
+        @font-face {
+            font-family: 'MySecondFont';
+            src: url(Fonts/3Dumb-webfont.woff) format('woff');
+        }
+        @font-face {
+            font-family: 'MyThirdFont';
+            src: url(Fonts/HOMINIS-webfont.woff) format('woff');
+        }
+        h1 {
+            font-family: 'MyFont', 'Malgun Gothic';
+        }
+        h2 {
+            font-family: MySecondFont;
+        }
+        h3 {
+            font-family: MyThirdFont;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h2>Hi</h2>
+    <h3>Bye</h3>
+</body>
+</html>

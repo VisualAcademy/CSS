@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>어트리뷰트 와일드카드 Selector</title>
+    <style>
+        [class*="con"] {
+            color: tomato;
+        }
+        [class^="start-"] {
+            color: blue;
+        }
+        [class$="-with"] {
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        모두
+    </div>
+    <div class="start-with">
+        시작
+    </div>
+    <div class="end-with">
+        끝
+    </div>
+</body>
+</html>

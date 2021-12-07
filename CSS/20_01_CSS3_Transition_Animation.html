@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Transition</title>
+    <style>
+        button {
+            color: blue;
+        }
+            button.animate {
+                font-size: 30px;
+                background-color: #C0FFEE;
+                border-radius: 5px;
+                border-width: 1px;
+                padding: 15px;
+                /*transition: 속성이름 시간 함수;*/
+                transition: background-color .5s ease-in-out; 
+            }
+                button.animate:hover {
+                    background-color: tomato;
+                    color: black;
+                }
+    </style>
+</head>
+<body>
+    <button class="animate">버튼</button>
+</body>
+</html>
